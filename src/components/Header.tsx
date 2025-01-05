@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 export default function Header() {
   return (
@@ -6,10 +7,18 @@ export default function Header() {
     items-center'>
         <img className='py-4'src={logo} alt="" />
         <ul className='flex flex-wrap text-white text-base'>
-            <li className='mr-10 hover:text-[#118DA8] cursor-pointer'>Home</li>
-            <li className='mr-10 hover:text-[#118DA8] cursor-pointer'>Episodes</li>
-            <li className='mr-10 hover:text-[#118DA8] cursor-pointer'>About</li>
-            <li className='mr-10 hover:text-[#118DA8] cursor-pointer'>Contract</li>
+            <li className='mr-10 hover:text-[#118DA8] cursor-pointer'>
+              <Link to='/'>Home</Link>
+            </li>
+            <li className='mr-10 hover:text-[#118DA8] cursor-pointer'>
+              <Link to='/episodes'>Episodes</Link>
+            </li>
+            <li className='mr-10 hover:text-[#118DA8] cursor-pointer'>
+              <Link to='/about'>About</Link>
+            </li>
+            <li className='mr-10 hover:text-[#118DA8] cursor-pointer'>
+              <Link to='/'>Contact</Link>
+            </li>
         </ul>
     </header>
   )

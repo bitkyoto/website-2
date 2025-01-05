@@ -6,7 +6,7 @@ export interface IPost{
   title: string;
   description: string;
 }
-export default function Post(props: IPost) {
+export function Post(props: IPost) {
   return (
     <div className='post_container mx-16 mb-14 flex flex-wrap bg-black rounded-[2rem]'>
         <div className="left w-1/3 p-10 pr-12">
